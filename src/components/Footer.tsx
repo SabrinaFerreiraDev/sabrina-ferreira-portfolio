@@ -6,17 +6,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com/sabrinaferreira",
+      href: "https://github.com/SabrinaFerreiraDev",
       icon: Github,
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/sabrinaferreira",
+      href: "https://www.linkedin.com/in/sabrina-ferreira-802a8a378/",
       icon: Linkedin,
     },
     {
       name: "Email",
-      href: "mailto:contato@sabrinaferreira.dev",
+      href: "mailto:contato@sabrinaferreirasilva745@gmail.com",
       icon: Mail,
     },
   ];

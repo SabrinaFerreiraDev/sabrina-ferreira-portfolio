@@ -79,7 +79,7 @@ export default function Contact() {
               {/* Contact Details */}
               <div className="space-y-4">
                 <a
-                  href="mailto:contato@sabrinaferreira.dev"
+                  href="mailto:contato@sabrinaferreirasilva745@gmail.com"
                   className="flex items-center gap-4 p-4 glass rounded-xl hover:border-primary/50 transition-all group"
                 >
                   <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
@@ -88,7 +88,7 @@ export default function Contact() {
                   <div>
                     <p className="text-sm text-muted-foreground">E-mail</p>
                     <p className="font-medium group-hover:text-primary transition-colors">
-                      contato@sabrinaferreira.dev
+                      sabrinaferreirasilva745@gmail.com
                     </p>
                   </div>
                 </a>
@@ -99,7 +99,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localização</p>
-                    <p className="font-medium">Brasil - Remoto</p>
+                    <p className="font-medium">Brasil - Iguai(ba)</p>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Telefone</p>
-                    <p className="font-medium">(00) 00000-0000</p>
+                    <p className="font-medium">(73) 99900-9065</p>
                   </div>
                 </div>
               </div>

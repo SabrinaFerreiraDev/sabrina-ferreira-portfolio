@@ -1,4 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import AvatarPerfil from "../components/img/WhatsApp Image 2025-11-23 at 10.21.04 AM.jpeg"
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -38,15 +39,14 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/50">
             {/* Placeholder for Sabrina's photo - replace src with actual image */}
             <div className="w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
-              <span className="text-6xl font-display text-primary/30">SF</span>
-            </div>
-            {/* Uncomment and update src when you have the actual photo:
-            <img 
-              src="/path-to-sabrina-photo.jpg" 
+              <span className="text-6xl font-display text-primary/30"><img 
+                src={AvatarPerfil} 
               alt="Sabrina Ferreira" 
               className="w-full h-full object-cover"
-            />
-            */}
+            /></span>
+            </div>
+            
+           
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex gap-4 justify-center lg:justify-start">
             <a
-              href="https://github.com/sabrinaferreira"
+              href="https://github.com/SabrinaFerreiraDev"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 hover:scale-110"
@@ -97,7 +97,7 @@ export default function Hero() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/sabrinaferreira"
+              href="https://www.linkedin.com/in/sabrina-ferreira-802a8a378/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 hover:scale-110"
@@ -106,7 +106,7 @@ export default function Hero() {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:contato@sabrinaferreira.dev"
+              href="mailto:contato@sabrinaferreirasilva745@gmail.com"
               className="p-3 glass rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >

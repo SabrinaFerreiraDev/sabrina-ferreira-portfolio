@@ -1,6 +1,5 @@
 import { Code2, Sparkles, Target, Zap } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
 const highlights = [
   {
     icon: Code2,
@@ -51,19 +50,16 @@ export default function About() {
                 {/* Placeholder for second photo - replace with actual image */}
                 <div className="w-full aspect-[4/5] rounded-xl bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden">
                   <div className="text-center p-8">
-                    <span className="text-8xl font-display text-primary/20">SF</span>
+                    <span className="text-8xl font-display text-primary/20"><img 
+                  src="/src/components/img/WhatsApp Image 2025-11-23 at 10.21.05 AM.jpeg" 
+                  alt="Sabrina Ferreira trabalhando" 
+                  className="w-full aspect-[4/5] object-cover rounded-xl"
+                /></span>
                     <p className="text-muted-foreground mt-4 text-sm">
-                      Sua foto aqui
+                  
                     </p>
                   </div>
                 </div>
-                {/* Uncomment and update src when you have the actual photo:
-                <img 
-                  src="/path-to-sabrina-about-photo.jpg" 
-                  alt="Sabrina Ferreira trabalhando" 
-                  className="w-full aspect-[4/5] object-cover rounded-xl"
-                />
-                */}
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 border-2 border-primary/30 rounded-2xl" />
