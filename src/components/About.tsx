@@ -1,5 +1,6 @@
 import { Code2, Sparkles, Target, Zap } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import FotoAvatar from "./img/WhatsApp Image 2025-11-23 at 10.21.05 AM.jpeg";
 const highlights = [
   {
     icon: Code2,
@@ -51,7 +52,7 @@ export default function About() {
                 <div className="w-full aspect-[4/5] rounded-xl bg-gradient-to-br from-secondary to-muted flex items-center justify-center overflow-hidden">
                   <div className="text-center p-8">
                     <span className="text-8xl font-display text-primary/20"><img 
-                  src="/src/components/img/WhatsApp Image 2025-11-23 at 10.21.05 AM.jpeg" 
+                  src={FotoAvatar} 
                   alt="Sabrina Ferreira trabalhando" 
                   className="w-full aspect-[4/5] object-cover rounded-xl"
                 /></span>
