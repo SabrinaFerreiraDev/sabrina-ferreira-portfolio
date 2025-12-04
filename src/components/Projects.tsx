@@ -3,6 +3,13 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
+import projectTaskflow from "@/assets/project-taskflow.jpg";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectWeather from "@/assets/project-weather.jpg";
+import projectBlog from "@/assets/project-blog.jpg";
+import projectFinance from "@/assets/project-finance.jpg";
+import projectSocial from "@/assets/project-social.jpg";
+
 const projects = [
   {
     id: 1,
@@ -10,7 +17,7 @@ const projects = [
     description:
       "Aplicação de gerenciamento de tarefas com dashboard interativo, drag-and-drop e colaboração em tempo real entre equipes.",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    image: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    image: projectTaskflow,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -20,7 +27,7 @@ const projects = [
     description:
       "Plataforma completa de e-commerce com carrinho de compras, pagamentos integrados e painel administrativo.",
     technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    image: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+    image: projectEcommerce,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -30,7 +37,7 @@ const projects = [
     description:
       "Dashboard meteorológico com previsões em tempo real, gráficos interativos e alertas personalizados.",
     technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-    image: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+    image: projectWeather,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -40,7 +47,7 @@ const projects = [
     description:
       "Sistema de blog com editor rich-text, sistema de comentários, categorias e otimização SEO avançada.",
     technologies: ["Next.js", "Prisma", "MySQL", "TipTap"],
-    image: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    image: projectBlog,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -50,7 +57,7 @@ const projects = [
     description:
       "Aplicativo de controle financeiro pessoal com gráficos, metas de economia e relatórios detalhados.",
     technologies: ["React Native", "Firebase", "Redux", "Victory Charts"],
-    image: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+    image: projectFinance,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -60,7 +67,7 @@ const projects = [
     description:
       "Rede social minimalista com feed em tempo real, sistema de mensagens e notificações push.",
     technologies: ["Vue.js", "Node.js", "Redis", "WebSockets"],
-    image: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+    image: projectSocial,
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -183,11 +190,13 @@ function ProjectCard({ project, featured }: ProjectCardProps) {
         featured ? "neon-border" : ""
       }`}
     >
-      {/* Project Image/Gradient */}
-      <div
-        className="h-48 relative overflow-hidden"
-        style={{ background: project.image }}
-      >
+      {/* Project Image */}
+      <div className="h-48 relative overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-all duration-300" />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/60 backdrop-blur-sm">
           <div className="flex gap-4">
