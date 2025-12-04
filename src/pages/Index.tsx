@@ -1,13 +1,51 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from "react-helmet-async";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Technologies from "@/components/Technologies";
+import Experience from "@/components/Experience";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Sabrina Ferreira | Desenvolvedora Full Stack</title>
+        <meta
+          name="description"
+          content="Portfólio de Sabrina Ferreira, Desenvolvedora Full Stack especializada em React, Node.js e criação de experiências digitais inovadoras."
+        />
+        <meta
+          name="keywords"
+          content="desenvolvedor full stack, react, node.js, javascript, portfolio, web developer"
+        />
+        <meta name="author" content="Sabrina Ferreira" />
+        <meta property="og:title" content="Sabrina Ferreira | Desenvolvedora Full Stack" />
+        <meta
+          property="og:description"
+          content="Transformando ideias em experiências digitais inovadoras. Portfólio profissional de desenvolvimento web."
+        />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://sabrinaferreira.dev" />
+      </Helmet>
+
+      <div className="min-h-screen bg-background overflow-x-hidden">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Technologies />
+          <Experience />
+          <Certifications />
+          <Contact />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
