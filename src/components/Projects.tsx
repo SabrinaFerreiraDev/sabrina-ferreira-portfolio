@@ -3,7 +3,7 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-import projectTaskflow from "./img/project-taskflow.jpg";
+import projetTradutorIA from "./img/tradutorIa.jpeg";
 import projectEcommerce from "./img/project-ecommerce.jpg";
 import projectWeather from "./img/project-weather.jpg";
 import projectBlog from "./img/project-blog.jpg";
@@ -13,13 +13,13 @@ import projectSocial from "./img/project-social.jpg";
 const projects = [
   {
     id: 1,
-    title: "TaskFlow Pro",
+    title: "Tradutor em IA",
     description:
-      "Aplicação de gerenciamento de tarefas com dashboard interativo, drag-and-drop e colaboração em tempo real entre equipes.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io"],
-    image: projectTaskflow,
-    demoUrl: "#",
-    githubUrl: "#",
+      "Aplicação web de tradução desenvolvida com HTML, CSS e JavaScript puro, integrando a MyMemory Translation API para tradução de textos em tempo real e a Web Speech API para reconhecimento de voz. O projeto permite que o usuário fale ou digite frases e receba traduções automaticamente em diferentes idiomas através de uma interface simples e intuitiva.",
+    technologies: ["HTML", "CSS", "JavaScript", "MyMemory API", "Web Speech API","fetch API"],
+    image: projetTradutorIA,
+    demoUrl: "https://tradutor-ia-eight.vercel.app/",
+    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/tradutor-ia-main",
   },
   {
     id: 2,
