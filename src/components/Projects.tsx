@@ -3,9 +3,10 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
+
 import projetTradutorIA from "./img/tradutorIa.jpeg";
 import projectEcommerce from "./img/project-ecommerce.jpg";
-import projectWeather from "./img/project-weather.jpg";
+import projectWeather from "./img/weather-forecast.jpeg";
 import projectBlog from "./img/project-blog.jpg";
 import projectFinance from "./img/project-finance.jpg";
 import projectSocial from "./img/project-social.jpg";
@@ -23,21 +24,21 @@ const projects = [
   },
   {
     id: 2,
+    title: "Weather Forecast",
+    description:
+      "Aplicação web de previsão do tempo desenvolvida em React + Vite, integrando a OpenWeatherMap API para dados climáticos em tempo real e Web Speech API para busca por voz. O projeto também utiliza IA (Groq + GPT) para gerar sugestões automáticas de vestuário com base na temperatura e umidade. A interface foi construída com Tailwind CSS, com design moderno e responsivo, utilizando Fetch API e variáveis de ambiente para comunicação segura com serviços externos.",
+    technologies: ["React", "Vite", "JavaScript","OpenWeatherMap API", "Tailwind","Web Speech API","Groq AI API","fetch API","Environment Variables (.env)"],
+    image: projectWeather,
+    demoUrl: "https://weatherforecast-tawny.vercel.app/",
+    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/weather-forecast",
+  },
+  {
+    id: 3,
     title: "E-Commerce Plus",
     description:
       "Plataforma completa de e-commerce com carrinho de compras, pagamentos integrados e painel administrativo.",
     technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
     image: projectEcommerce,
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Weather Dashboard",
-    description:
-      "Dashboard meteorológico com previsões em tempo real, gráficos interativos e alertas personalizados.",
-    technologies: ["React", "TypeScript", "Chart.js", "OpenWeather API"],
-    image: projectWeather,
     demoUrl: "#",
     githubUrl: "#",
   },
