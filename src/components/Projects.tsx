@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 
 import projetTradutorIA from "./img/tradutorIa.jpeg";
-import projectGeradorCss from "./img/GeradorCss.jpeg";
+import projectGeradorCss from "./img/geradorcss.jpeg";
 import projectWeather from "./img/weather-forecast.jpeg";
 import projectBlog from "./img/project-blog.jpg";
 import projectFinance from "./img/project-finance.jpg";
