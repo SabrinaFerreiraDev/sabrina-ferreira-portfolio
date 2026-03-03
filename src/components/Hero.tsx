@@ -1,7 +1,8 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import AvatarPerfil from "../components/img/WhatsApp Image 2025-11-23 at 10.21.04 AM.jpeg"
+import AvatarPerfil from "../components/img/WhatsApp Image 2025-11-23 at 10.21.04 AM.jpeg";
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { FileText } from "lucide-react";
 
 export default function Hero() {
   const { ref, isVisible } = useScrollReveal();
@@ -22,9 +23,7 @@ export default function Hero() {
           className="absolute bottom-1/4 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         />
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"
-        />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       </div>
 
       <div
@@ -39,14 +38,14 @@ export default function Hero() {
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-primary/50">
             {/* Placeholder for Sabrina's photo - replace src with actual image */}
             <div className="w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
-              <span className="text-6xl font-display text-primary/30"><img 
-                src={AvatarPerfil} 
-              alt="Sabrina Ferreira" 
-              className="w-full h-full object-cover"
-            /></span>
+              <span className="text-6xl font-display text-primary/30">
+                <img
+                  src={AvatarPerfil}
+                  alt="Sabrina Ferreira"
+                  className="w-full h-full object-cover"
+                />
+              </span>
             </div>
-            
-           
           </div>
         </div>
 
@@ -63,8 +62,8 @@ export default function Hero() {
             Desenvolvedora Full Stack
           </h2>
           <p className="text-muted-foreground text-base md:text-lg mb-8 leading-relaxed">
-            Transformando ideias em experiências digitais inovadoras. 
-            Apaixonada por código limpo, design moderno e soluções que fazem a diferença.
+            Transformando ideias em experiências digitais inovadoras. Apaixonada
+            por código limpo, design moderno e soluções que fazem a diferença.
           </p>
 
           {/* CTA Buttons */}
@@ -111,6 +110,19 @@ export default function Hero() {
               aria-label="Email"
             >
               <Mail size={20} />
+            </a>
+            <a
+              href="./img/curriculo-sabrina-ferreira.pdf"
+              download
+              className="p-3 glass rounded-full
+  text-muted-foreground 
+  hover:text-primary 
+  hover:border-primary/50 
+  transition-all duration-300 
+  hover:scale-110"
+              aria-label="Currículo"
+            >
+              <FileText size={20} />
             </a>
           </div>
         </div>

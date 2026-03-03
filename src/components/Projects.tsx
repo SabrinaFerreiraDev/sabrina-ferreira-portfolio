@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 
 import projetTradutorIA from "./img/tradutorIa.jpeg";
-import projectEcommerce from "./img/project-ecommerce.jpg";
+import projectGeradorCss from "./img/GeradorCss.jpeg";
 import projectWeather from "./img/weather-forecast.jpeg";
 import projectBlog from "./img/project-blog.jpg";
 import projectFinance from "./img/project-finance.jpg";
@@ -34,13 +34,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-Commerce Plus",
+    title: "Gerador CSS",
     description:
-      "Plataforma completa de e-commerce com carrinho de compras, pagamentos integrados e painel administrativo.",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    image: projectEcommerce,
-    demoUrl: "#",
-    githubUrl: "#",
+      "O Gerador CSS é uma aplicação frontend que permite ao usuário descrever visualmente um estilo (como “botão azul com sombra e borda arredondada”) e receber automaticamente o código CSS correspondente. O objetivo é acelerar o desenvolvimento de estilos, diminuir atrito na prototipação visual e servir como apoio para desenvolvedores e designers que precisam criar estilos rapidamente sem escrever CSS manualmente.",
+    technologies: ["JavaScript", "CSS", "HTML","fetch API","github"],
+    image: projectGeradorCss,
+    demoUrl: "https://geradorcss.vercel.app/",
+    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/Gerador-Css",
   },
   {
     id: 4,

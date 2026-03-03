@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 relative">
+    <section id="contact" className="py-20 md:py-32 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
 
@@ -57,54 +57,54 @@ export default function Contact() {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-4" />
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Tem um projeto em mente ou quer bater um papo sobre tecnologia? 
+              Tem um projeto em mente ou quer bater um papo sobre tecnologia?
               Ficarei feliz em conversar!
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 md:items-start">
             {/* Contact Info */}
-            <div className="space-y-8">
-              <div>
+            <div className="min-w-0 space-y-8">
+              <div className="text-center md:text-left">
                 <h3 className="font-display text-2xl font-semibold mb-6">
                   Vamos criar algo incrível juntos?
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Estou sempre aberta a novas oportunidades, projetos 
-                  interessantes e conversas sobre tecnologia. Não hesite 
-                  em entrar em contato!
+                  Estou sempre aberta a novas oportunidades, projetos
+                  interessantes e conversas sobre tecnologia. Não hesite em
+                  entrar em contato!
                 </p>
               </div>
 
               {/* Contact Details */}
-              <div className="space-y-4">
+              <div className="space-y-4 ">
                 <a
-                  href="mailto:contato@sabrinaferreirasilva745@gmail.com"
-                  className="flex items-center gap-4 p-4 glass rounded-xl hover:border-primary/50 transition-all group"
+                  href="mailto:sabrinaferreirasilva745@gmail.com"
+                  className="group flex min-w-0 items-start gap-4 rounded-xl p-4 glass transition-all hover:border-primary/50"
                 >
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <div className="shrink-0 rounded-lg bg-primary/10 p-3 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground">
                     <Mail size={20} />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">E-mail</p>
-                    <p className="font-medium group-hover:text-primary transition-colors">
+                    <p className="text-sm font-medium break-all transition-colors group-hover:text-primary sm:text-base">
                       sabrinaferreirasilva745@gmail.com
                     </p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                <div className="flex min-w-0 items-center gap-4 rounded-xl p-4 glass">
+                  <div className="shrink-0 rounded-lg bg-primary/10 p-3 text-primary">
                     <MapPin size={20} />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localização</p>
-                    <p className="font-medium">Brasil - Iguai(ba)</p>
+                    <p className="font-medium">Guarulhos - SP</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                <div className="flex min-w-0 items-center gap-4 rounded-xl p-4 glass">
+                  <div className="shrink-0 rounded-lg bg-primary/10 p-3 text-primary">
                     <Phone size={20} />
                   </div>
                   <div>
@@ -116,8 +116,8 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="glass-strong rounded-2xl p-8 neon-border">
+            <form onSubmit={handleSubmit} className="min-w-0 w-full space-y-6">
+              <div className="glass-strong rounded-2xl p-5 sm:p-6 md:p-8 neon-border">
                 <div className="space-y-6">
                   {/* Name Field */}
                   <div className="space-y-2">
@@ -135,7 +135,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="Seu nome completo"
-                      className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-muted-foreground/50"
+                      className="w-full px-4 min-w-0 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-muted-foreground/50"
                     />
                   </div>
 

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, FileText ,Heart} from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,6 +19,11 @@ export default function Footer() {
       href: "mailto:contato@sabrinaferreirasilva745@gmail.com",
       icon: Mail,
     },
+    {
+      name: "Curriculo",
+      href: "./img/curriculo-sabrina-ferreira.pdf",
+      icon: FileText,
+    }
   ];
 
   const scrollToTop = () => {
