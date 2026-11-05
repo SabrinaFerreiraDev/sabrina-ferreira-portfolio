@@ -4,54 +4,85 @@ import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 
-import projetTradutorIA from "./img/tradutorIA.png";
+import projetTradutorIA from "./img/tradutorIa.png";
 import projectGeradorCss from "./img/geradorcss.jpeg";
-import projectWeather from "./img/weather-forecast.jpeg";
+import projectWeather from "./img/weather-forecast.png";
 import projectBlog from "./img/project-blog.jpg";
 import projectFinance from "./img/project-finance.jpg";
 import projectSocial from "./img/project-social.jpg";
-
+import projectTaskFlow from "./img/TaskFlow.png";
 const projects = [
   {
     id: 1,
     title: "Tradutor em IA",
     description:
       "Aplicação web de tradução desenvolvida com HTML, CSS e JavaScript puro, integrando a MyMemory Translation API para tradução de textos em tempo real e a Web Speech API para reconhecimento de voz. O projeto permite que o usuário fale ou digite frases e receba traduções automaticamente em diferentes idiomas através de uma interface simples e intuitiva.",
-    technologies: ["HTML", "CSS", "JavaScript", "MyMemory API", "Web Speech API","fetch API"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MyMemory API",
+      "Web Speech API",
+      "fetch API",
+    ],
     image: projetTradutorIA,
     demoUrl: "https://tradutor-ia-eight.vercel.app/",
-    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/tradutor-ia-main",
+    githubUrl:
+      "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/tradutor-ia-main",
   },
   {
     id: 2,
     title: "Weather Forecast",
     description:
       "Aplicação web de previsão do tempo desenvolvida em React + Vite, integrando a OpenWeatherMap API para dados climáticos em tempo real e Web Speech API para busca por voz. O projeto também utiliza IA (Groq + GPT) para gerar sugestões automáticas de vestuário com base na temperatura e umidade. A interface foi construída com Tailwind CSS, com design moderno e responsivo, utilizando Fetch API e variáveis de ambiente para comunicação segura com serviços externos.",
-    technologies: ["React", "Vite", "JavaScript","OpenWeatherMap API", "Tailwind","Web Speech API","Groq AI API","fetch API","Environment Variables (.env)"],
+    technologies: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "OpenWeatherMap API",
+      "Tailwind",
+      "Web Speech API",
+      "Groq AI API",
+      "fetch API",
+      "Environment Variables (.env)",
+    ],
     image: projectWeather,
     demoUrl: "https://weatherforecast-tawny.vercel.app/",
-    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/weather-forecast",
+    githubUrl:
+      "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/weather-forecast",
   },
   {
     id: 3,
     title: "Gerador CSS",
     description:
       "O Gerador CSS é uma aplicação frontend que permite ao usuário descrever visualmente um estilo (como “botão azul com sombra e borda arredondada”) e receber automaticamente o código CSS correspondente. O objetivo é acelerar o desenvolvimento de estilos, diminuir atrito na prototipação visual e servir como apoio para desenvolvedores e designers que precisam criar estilos rapidamente sem escrever CSS manualmente.",
-    technologies: ["JavaScript", "CSS", "HTML","fetch API","github"],
+    technologies: ["JavaScript", "CSS", "HTML", "fetch API", "github"],
     image: projectGeradorCss,
     demoUrl: "https://geradorcss.vercel.app/",
-    githubUrl: "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/Gerador-Css",
+    githubUrl:
+      "https://github.com/SabrinaFerreiraDev/PROJETOS_PESSOAIS/tree/main/Gerador-Css",
   },
+
   {
     id: 4,
-    title: "Blog Platform",
+    title: "TaskFlow",
     description:
-      "Sistema de blog com editor rich-text, sistema de comentários, categorias e otimização SEO avançada.",
-    technologies: ["Next.js", "Prisma", "MySQL", "TipTap"],
-    image: projectBlog,
-    demoUrl: "#",
-    githubUrl: "#",
+      "Aplicação full-stack de gerenciamento de tarefas, com autenticação de usuários, criação e organização de atividades, categorias, prioridades, filtros e acompanhamento de produtividade. Desenvolvida com React no front-end e Node.js com Express no back-end, utilizando PostgreSQL e Prisma ORM para gerenciamento de dados. Implementa autenticação segura com JWT, criptografia de senhas e validação de dados.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma ORM",
+      "JWT",
+      "Zod",
+    ],
+    image: projectTaskFlow,
+    demoUrl: "https://taskflow-lyart-nu.vercel.app/",
+    githubUrl: "https://github.com/SabrinaFerreiraDev/TaskFlow/tree/main",
   },
+  
   {
     id: 5,
     title: "Finance Tracker",
