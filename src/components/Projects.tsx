@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 
-import projetTradutorIA from "./img/tradutorIa.jpeg";
+import projetTradutorIA from "./img/tradutorIA.png";
 import projectGeradorCss from "./img/geradorcss.jpeg";
 import projectWeather from "./img/weather-forecast.jpeg";
 import projectBlog from "./img/project-blog.jpg";
