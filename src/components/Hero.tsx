@@ -112,14 +112,9 @@ export default function Hero() {
               <Mail size={20} />
             </a>
             <a
-              href="./img/curriculo-sabrina-ferreira.pdf"
-              download
-              className="p-3 glass rounded-full
-  text-muted-foreground 
-  hover:text-primary 
-  hover:border-primary/50 
-  transition-all duration-300 
-  hover:scale-110"
+              href="/curriculo-sabrina-ferreira.pdf"
+              download="curriculo-sabrina-ferreira.pdf"
+              className="p-3 glass rounded-full text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 hover:scale-110"
               aria-label="Currículo"
             >
               <FileText size={20} />
