@@ -1,5 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import AvatarPerfil from "../components/img/WhatsApp Image 2025-11-23 at 10.21.04 AM.jpeg";
+import AvatarPerfil from "./img/ft-1.jpeg";
 import { Button } from "./ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { FileText } from "lucide-react";

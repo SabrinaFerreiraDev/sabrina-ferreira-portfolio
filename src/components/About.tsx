@@ -1,6 +1,6 @@
 import { Code2, Sparkles, Target, Zap } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import FotoAvatar from "./img/WhatsApp Image 2025-11-23 at 10.21.05 AM.jpeg";
+import FotoAvatar from "./img/ft-2.jpeg";
 const highlights = [
   {
     icon: Code2,
